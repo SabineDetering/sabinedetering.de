@@ -1,0 +1,10 @@
+<div class="img-slideshow-container">
+    <img *ngIf="showImage" class="img-slideshow" src="assets/img/{{images[currentImage]}}" alt="">
+</div>
+
+<div class="img-slideshow-container slideshow-overlay">
+    <!-- ngIf sorgt dafür,dass das Element kurz ausgeblendet und wieder neu geladen wird, dadurch wird animation erneut gezeigt (sonst nur beim ersten Laden und nicht beim Wechseln) -->
+    <p *ngIf="showImage" class="fadeIn">
+        {{headlines[currentImage]}}
+    </p>
+</div>
