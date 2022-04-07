@@ -26,7 +26,6 @@ header {
     img {
         height: 50px;
         cursor: pointer;
-
     }
 }
 
@@ -35,7 +34,7 @@ header {
         color: black;
 
         &:hover {
-            color: rgba(0, 0, 0, 0.8);
+            color: rgba(0, 0, 0, 0.5);
         }
     }
 }
